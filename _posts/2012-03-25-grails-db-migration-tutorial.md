@@ -9,7 +9,7 @@ I've used Grails for a few projects recently, and, while I've enjoyed the framew
 *   Testing (Quick note: I use [spock][1] for my grails testing)
 *   database migrations
 
-With the release of Grails 2.0.0 and the official db-migration plugin, the latter has become much less of a problem, but it still seems to suffer from some lack of good documentation and examples. Over the course of a couple of posts, I'll try to walk through an example of installing this plugin to an existing Grails project and making some domain model changes.
+With the release of Grails 2.0.0 and the official db-migration plugin, the latter has become much less of a problem, but it still seems to suffer from some lack of good documentation and examples. So with this post, I'll try to walk through an example of installing this plugin to an existing Grails project and making some domain model changes.
 
 ## Setup / Configuration
 
@@ -55,16 +55,18 @@ environments {
 {% endhighlight %}
 
 
-However, in my case, I use a configuration in the .grails folder of my home directory to configure my project data source, so **the line needs to be removed from this file**. This step is *only* if you use this type of configuration. In ~/.grails/blog-config.groovy:
+However, in my case, I use a configuration in the .grails folder of my home directory to configure my project data source, so the line needs to be removed from **this** file. This step is *only* if you use this type of configuration. In ~/.grails/blog-config.groovy:
 
 {% highlight groovy %}
 dataSource {
-    dbCreate = "update"
+    dbCreate = "update" //Delete me
     url = "jdbc:postgresql:blog"
     pooled = true
     dialect = org.hibernate.dialect.PostgresDialect
 }
 {% endhighlight %}
+
+###Baseline
 
 Now we will capture a baseline of our database that migrations will be added to. To do this, we will read the current state of the classes and write it into our baseline changeset.
 
