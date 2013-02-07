@@ -1,24 +1,24 @@
 ---
 layout : default
 ---
-<section class="content">
-  <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
+<div class="content">
+  <h1>{{ page.title }}</h1>
 
-  <section class="byline">
+  <div class="byline">
     {{ page.date | date: "%B %e, %Y" }}
-  </section>
+  </div>
 
   {{ content }}
 
-  <section class="meta">
+  <hr />
+
+  <div class="meta">
     <p>
-      I'm a developer in Franklin (Nashville), TN. Java, Ruby, and Javascript, primarily, but always trying to expand my horizons. <a href="https://twitter.com/{{ site.twitter }}" target="_blank">Follow me on Twitter</a>; I'm pretty quiet for the most part. <a href="https://github.com/{{ site.github }}" target="_blank">Here's my GitHub.</a>
+      I'm a developer in Franklin (Nashville), TN. I work with Java, Ruby, and Javascript, primarily, but always trying to expand my horizons. You can <a href="https://twitter.com/{{ site.twitter }}" target="_blank">find me on twitter</a> or check out what very little public code I do have on <a href="https://github.com/{{ site.github }}" target="_blank">my GitHub</a>.
     </p>
 
     <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
     <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
     <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-  </section>
-</section>
+  </div>
+</div>

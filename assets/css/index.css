@@ -1,0 +1,42 @@
+body {
+  -webkit-font-smoothing:antialiased;
+  font-family:Helvetica, sans-serif;
+  margin:0;
+  color: #222;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 200px auto 0 auto;
+}
+
+.main-image {
+  width: 200px;
+  margin: 0 auto 15px auto;
+}
+
+.main-image img {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -moz-box-shadow: 0 0 10px #888;
+  -webkit-box-shadow: 0 0 10px #888;
+  box-shadow: 0 0 10px #888;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #222;
+}
+
+.icons a:hover {
+  color: #444;
+}
+
+.icons i {
+  margin: 10px;
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
-category : grails
-tags : [tutorial, database, migration]
+category : tutorials
+tags : [grails, tutorial, database, migration]
 ---
 
 I've used Grails for a few projects recently, and, while I've enjoyed the framework as a whole, there have been two major pain points coming from my experiences with Spring MVC and rails. These are:
@@ -340,7 +340,7 @@ But this can be ***dangerous***. There is a [great blog post][5] that outlines t
 
 Even with the simple tools outlined here, I've been able to tackle the majority of the changes that happen to my domain classes in Grails projects. I welcome any suggestions to improve this process.
 
-Hopefully it's been helpful! Remember that if you can view or download [the project source][6] for future reference.
+Hopefully this was helpful. If so, remember that you can view or download [the project source][6] for future reference.
 
 
  [1]: http://code.google.com/p/spock/ "Spock"
