@@ -22,19 +22,53 @@ body {
   -moz-box-shadow: 0 0 10px #888;
   -webkit-box-shadow: 0 0 10px #888;
   box-shadow: 0 0 10px #888;
+  -moz-transition: -moz-box-shadow 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  -o-transition:  -o-box-shadow 0.5s;
+  -ms-transition:  -ms-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+.main-image img:hover {
+  -moz-box-shadow: 0 0 40px #666;
+  -webkit-box-shadow: 0 0 40px #666;
+  box-shadow: 0 0 40px #666;
+  -moz-transition: -moz-box-shadow 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  -o-transition: -o-box-shadow 0.5s;
+  -ms-transition: -ms-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
 }
 
 .icons {
   text-align: center;
 }
 
-.icons a {
+.icon {
+  display: inline-block;
+  margin: 0 auto;
+  color: #F1F1F1;
+  text-transform: lowercase;
+}
+
+.icon a {
+  display: block;
   text-decoration: none;
   color: #222;
+  -moz-transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .icons a:hover {
-  color: #444;
+  color: #777;
+  -moz-transition: color 1s;
+  -webkit-transition: color 1s;
+  -o-transition: color 1s;
+  -ms-transition: color 1s;
+  transition: color 1s;
 }
 
 .icons i {
