@@ -1,0 +1,197 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$mobile: new-breakpoint(max-width 480px 8);
+$tablet: new-breakpoint(max-width 768px 4);
+$text-color: #57565e;
+$link-color: #358cce;
+$accent-color: #dddddd;
+
+@mixin accent-text {
+    color: lighten($text-color, 25%);
+    font-weight: 200;
+    font-size: .8em;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 28px;
+    color: $text-color;
+    background-color: #f4f4f4;
+
+    @include media($mobile) {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+h1 {
+    line-height: 1.2em;
+}
+
+h1, h2, h3, h4 {
+    color: darken($text-color, 30%);
+}
+
+a {
+    color: darken($link-color, 5%);
+
+    &:hover {
+        color: darken($link-color, 15%);
+    }
+}
+
+code {
+    min-width: 100%;
+    float: left;
+    @include pad(15px);
+
+    font-family: "Droid Sans Mono", monospace;
+    line-height: 1.4em;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+}
+
+div.container {
+    width: 700px;
+
+    @include media($tablet) {
+        width: 80%;
+    }
+
+    @include media($mobile) {
+        width: 90%;
+    }
+
+    @include outer-container;
+}
+
+div.header {
+    @include span-columns(12);
+    border-bottom: 1px solid $accent-color;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    @include media($tablet) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    a {
+        color: darken($text-color, 15%);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.header-image img {
+            border-radius: 1000px;
+            float: left;
+            border: 5px solid $accent-color;
+            margin-top: 10px;
+
+            @include media($mobile) {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+
+    .name {
+        display: inline-block;
+        float: left;
+        font-size: 45px;
+        line-height: 60px;
+        margin-top: 40px;
+        margin-left: 10px;
+        letter-spacing: -3px;
+
+        @include media($tablet) {
+            font-size: 35px;
+            line-height: 50px;
+            margin-top: 40px;
+        }
+
+        @include media($mobile) {
+            font-size: 30px;
+            line-height: 40px;
+            margin-top: 30px;
+        }
+
+        .fname {
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        .lname {
+            font-weight: normal;
+        }
+    }
+
+    .links {
+        float: right;
+
+        @include media($tablet) {
+            float: left;
+            text-align: center;
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 14px;
+            line-height: 28px;
+
+            @include media($tablet) {
+                border-top: 1px solid $accent-color;
+                display: block;
+                line-height: 14px;
+                padding: 10px 0 0 0;
+            }
+
+            li {
+                border-bottom: 1px solid $accent-color;
+
+                &:last-child {
+                    border-bottom: 0px;
+                }
+
+                @include media($tablet) {
+                    display: inline-block;
+                    border-bottom: 0px;
+                    border-right: 1px solid $accent-color;
+                    padding: 0 10px 0 10px;
+
+                    &:last-child {
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.content {
+    @include span-columns(12);
+}
+
+div.byline {
+    margin-top: -10px;
+    @include accent-text;
+}
+
+div.post {
+    .post-date {
+        float: right;
+        @include accent-text;
+    }
+}
+
+div.post-footer {
+    @include accent-text;
+    line-height: 1.3em;
+}

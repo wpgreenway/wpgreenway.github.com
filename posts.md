@@ -9,7 +9,7 @@ layout: page
 {% endfor %}
 </div>
 
-<h2>Other Stuff</h2>
+<h2>Other</h2>
 <div class="posts">
 {% for post in site.categories.writing %}
     {% include site/post_link.html %}

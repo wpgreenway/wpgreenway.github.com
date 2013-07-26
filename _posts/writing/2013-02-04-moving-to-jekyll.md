@@ -3,13 +3,11 @@ layout: post
 category: writing
 ---
 
-Creating tutorials, blogging, and writing in general has been high on my "todo" list for a long time. Well, apparently not **too** high because since my first post to a wordpress.com blog in March of last year I have exactly zero more entries. There always seems to be a list of reasons why I *don't* write, but I'm dedicated to overcoming those and making it a habit now. As a first step in that direction, I'm in the process of getting a site put together using Jekyll on GitHub Pages with my new domain.
+Creating tutorials, blogging, and writing in general has been high on my "todo" list for a long time. Well, apparently not **too** high because since my first post to a wordpress.com blog in March of 2012 (almost a full year ago) I have exactly zero more entries. It's always so easy to come up with a list of reasons why *not* to write, but I am going to work to stop allowing myself to do that. As a first step in that direction, I'm in the process of getting a site put together using Jekyll on GitHub Pages with a new domain.
 
-For now I just want to give a big "thank you" to...
+For now I just want to give a quick "thank you" to...
 * [Jekyll Bootstrap](http://jekyllbootstrap.com/) for giving a good starting place for learning about Jekyll in general
-* [@holman](http://twitter.com/holman) for open-sourcing his old template named [left](https://github.com/holman/left) that I'm using with some slight modifications to make it less good than it was (as a side note, [his new design](http://zachholman.com) is awesome and I'm going to have trouble not unintentionally copying it now that I've seen it). In the very near future I plan on pretending like I have a clue what I'm doing with web design and rework the layout.
-* Of course to [@mojombo](https://github.com/mojombo/) for creating such an awesome static site generator.
+* [@holman](http://twitter.com/holman) for open-sourcing his old template named [left](https://github.com/holman/left) that I used to get a site up and running quickly until I had time to rework the layout.
+* And of course: [@mojombo](https://github.com/mojombo/) for creating such an awesome static site generator.
 
-It's already been interesting to learn more about jekyll, markdown, liquid, and this will be a great opportunity to finally play around with some other tools like sass that I haven't had a good opportunity to work with.
-
-I'm looking forward to it.
+It's already been great to learn more about jekyll, markdown, and liquid. Plus, this will be a great opportunity to finally play around with some other tools like sass that I haven't had a good opportunity to work with.
