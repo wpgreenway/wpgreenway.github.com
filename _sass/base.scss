@@ -47,12 +47,9 @@ a {
 code {
     min-width: 100%;
     float: left;
-    @include pad(15px);
 
     font-family: "Droid Sans Mono", monospace;
     line-height: 1.4em;
-    background-color: #dfdfdf;
-    border-radius: 10px;
 }
 
 div.container {
@@ -87,12 +84,15 @@ div.header {
         &:hover {
             text-decoration: none;
         }
+    }
 
-        &.header-image img {
+    .header-image {
+        float: left;
+        margin-top: 10px;
+
+        img {
             border-radius: 1000px;
-            float: left;
-            border: 5px solid $accent-color;
-            margin-top: 10px;
+            box-shadow: 0 0 0 5px $accent-color;
 
             @include media($mobile) {
                 height: 80px;

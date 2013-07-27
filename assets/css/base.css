@@ -30,11 +30,8 @@ a {
 code {
   min-width: 100%;
   float: left;
-  padding: 15px;
   font-family: "Droid Sans Mono", monospace;
-  line-height: 1.4em;
-  background-color: #dfdfdf;
-  border-radius: 10px; }
+  line-height: 1.4em; }
 
 div.container {
   width: 700px;
@@ -73,13 +70,14 @@ div.header {
     text-decoration: none; }
     div.header a:hover {
       text-decoration: none; }
-    div.header a.header-image img {
+  div.header .header-image {
+    float: left;
+    margin-top: 10px; }
+    div.header .header-image img {
       border-radius: 1000px;
-      float: left;
-      border: 5px solid #dddddd;
-      margin-top: 10px; }
+      box-shadow: 0 0 0 5px #dddddd; }
       @media screen and (max-width: 480px) {
-        div.header a.header-image img {
+        div.header .header-image img {
           height: 80px;
           width: 80px; } }
   div.header .name {
