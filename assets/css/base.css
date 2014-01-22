@@ -10,7 +10,8 @@ body {
   font-size: 17px;
   line-height: 28px;
   color: #57565e;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  -webkit-text-size-adjust: 100%; }
   @media screen and (max-width: 480px) {
     body {
       font-size: 15px;
@@ -31,7 +32,7 @@ code {
   min-width: 100%;
   float: left;
   font-family: "Droid Sans Mono", monospace;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4em; }
 
 div.container {

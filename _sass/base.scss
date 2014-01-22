@@ -21,6 +21,7 @@ body {
     line-height: 28px;
     color: $text-color;
     background-color: #f4f4f4;
+    -webkit-text-size-adjust: 100%;
 
     @include media($mobile) {
         font-size: 15px;
@@ -49,7 +50,7 @@ code {
     float: left;
 
     font-family: "Droid Sans Mono", monospace;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.4em;
 }
 
